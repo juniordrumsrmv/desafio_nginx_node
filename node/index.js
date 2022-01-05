@@ -10,8 +10,8 @@ const config = {
 const mysql = require('mysql')
 const connection = mysql.createConnection(config)
 
-// const sql = `INSERT INTO people(name) values('Bianou')`
-// connection.query(sql)
+const sql = `INSERT INTO people(name) values('Bianou')`
+connection.query(sql)
 
 //Exibindo a mensagem de full cycle
 app.get('/', (req,res) => {
